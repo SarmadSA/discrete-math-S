@@ -39,4 +39,21 @@ public class Func {
         }
         return foundAt;
     }
+
+    public int binarySearch(int x, int[] list){
+        int foundAt = -1;
+        int i = 0;
+        int j = list.length;
+        while(j != i){
+            if(list[(j+i/2)-1] < x){
+                i = j+i/2;
+            } else{
+                j = (j+i/2)-1;
+            }
+        }
+        if(i==j){
+            foundAt = i;
+        }
+        return foundAt;
+    }
 }
