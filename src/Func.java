@@ -29,4 +29,14 @@ public class Func {
         }
         return isPalindrome;
     }
+
+    public int linearSearch(int x, int[] list){
+        int foundAt = -1;
+        for(int i = 0; i < list.length; i++){
+            if(list[i] == x){
+                foundAt = i;
+            }
+        }
+        return foundAt;
+    }
 }

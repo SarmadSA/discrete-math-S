@@ -6,6 +6,7 @@ public class Main {
         //Run methods
         System.out.println("Sum of the list: " + funcitons.sumList(numList));
         System.out.println("Number of negative ints: " + funcitons.countNegativeInts(numList));
-        System.out.println("Is pdlsdj: " + funcitons.isPalindrome("tagat"));
+        System.out.println("Is Palindrome: " + funcitons.isPalindrome("tagat"));
+        System.out.println("Found at: " + funcitons.linearSearch(2, numList));
     }
 }
