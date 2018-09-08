@@ -42,16 +42,17 @@ public class Func {
 
     public int binarySearch(int x, int[] list){
         int foundAt = -1;
-        int i = 0;
-        int j = list.length;
-        while(j != i){
-            if(list[(j+i/2)-1] < x){
-                i = j+i/2;
+        //Search restriction from i to j.
+        int i = 0, j = list.length - 1; //i is the lower limit in list, j is upper limit.
+        while(i<j){
+            int m = ((j+i)/2);
+            if(list[m] < x){
+                i = m + 1;
             } else{
-                j = (j+i/2)-1;
+                j = m;
             }
         }
-        if(i==j){
+        if(x==list[i]){
             foundAt = i;
         }
         return foundAt;
