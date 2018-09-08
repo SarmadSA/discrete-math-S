@@ -9,6 +9,6 @@ public class Main {
         System.out.println("Is Palindrome: " + funcitons.isPalindrome("tagat"));
         System.out.println("Linearly found at: " + funcitons.linearSearch(2, numList));
         System.out.println("Binary found at: " + funcitons.binarySearch(2,numList));
-        System.out.println("Binary found at: " + funcitons.insertAt(6,numList));
+        System.out.println("Insert x at: " + funcitons.insertAt(6,numList));
     }
 }
