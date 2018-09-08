@@ -57,4 +57,17 @@ public class Func {
         }
         return foundAt;
     }
+
+    public int insertAt(int x, int[] list){
+        int i = 0, j = list.length - 1;
+        while(i<j){
+            int m = ((j+i)/2);
+            if(list[m] < x){
+                i = m + 1;
+            } else{
+                j = m;
+            }
+        }
+        return i;
+    }
 }
