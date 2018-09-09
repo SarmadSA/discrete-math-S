@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         Func funcitons =  new Func();
         int[] numList = {-2,-1,0,1,2,3,4,4,5,7};
-        int[] numList2 = {-2,-1,4,9,8,111,9,111,0,1,2,3,200,200,5,7};
+        int[] numList2 = {-2,-1,4,9,8,111,9,111,0,1,2   ,3,200,200,5,7};
 
         //Run methods
         System.out.println("Sum of the list: " + funcitons.sumList(numList));

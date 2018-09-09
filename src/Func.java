@@ -72,19 +72,19 @@ public class Func {
     }
 
     public int findFirstLargestAccurence(int[] list){
-        int x = list[0]; // Largest integer so far
+        int max = list[0]; // Largest integer so far
         boolean found = false; //Accurence
         int i = 1; //Index
         while(!found && i < list.length){
-            if(x < list[i]){
-                x = list[i];
+            if(max < list[i]){
+                max = list[i];
             }
-            else if(x == list[i]){
+            else if(max == list[i]){
                 found = true;
             }
             i++;
         }
-        return x;
+        return max;
     }
 
 }
