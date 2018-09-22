@@ -1,5 +1,3 @@
-//ex
-
 public class Func {
     
     public int sumList(int[] list){
